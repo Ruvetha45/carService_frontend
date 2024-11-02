@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.home-image{
+  background-image: url("./images/car4.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 850px;
+ 
+ 
+}
+
+.btn{
+  position: relative;
+  
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: black;
+  color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content Link {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content Link:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: flex; flex-direction: column;}
+
+.dropdown:hover .btn {background-color: #3e8e41;}
+
+.home-image2{
+  background-image: url("./images/batteryback.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 800px; 
+}
+
+.home-image3{
+  background-image: url("./images/s.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 800px; 
+}
+
+.home-image4{
+  background-image: url("./images/part.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 800px; 
+}
+
+  .rectangle{
+  height: 2.5px;
+  width: 180px;
+ margin-top: 5%;
+ margin-left: 10%;
+  background-color: red;
+    
+}
+
+.rectangle2{
+  height: 2.5px;
+  width: 180px;
+ margin-top: 2%;
+ margin-left: 10%;
+ margin-bottom: 2%;
+  background-color: red;
+    
+}
+
+.login-box1{
+  position: absolute;
+  height: 850px;
+  top:0;
+  right:-35%;
+  width: 35%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  transition: all 1s ease;
+  
+  
+ 
+}
+
+.login-box{
+  position: absolute;
+  height: 850px;
+  top:0;
+  right:0;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: whitesmoke;
+  
+  transition: all 1s ease;
+  
+  
+}
+
+.container{
+  width: 340px;
+  
+}
+
+
+.poster{
+    height:280px;
+    width:340px;
+    object-fit:cover;
+}
+
+@media screen and (max-width: 960px) {
+  .login-box{
+    display: none;
+  }
+  .login-box1{
+    display: none;
+  }
+
+  .features-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-image{
+    background-image: url("./images/car.jpg");
+    
+   
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .login-box{
+    display: none;
+  }
+  .login-box1{
+    display: none;
+  }
+  .home-image{
+    background-image: url("./images/carn2.jpeg");
+    
+   
+  }
+}
